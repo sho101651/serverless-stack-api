@@ -1,5 +1,5 @@
 {
-  "body": "{\"productid\":\"hello world\",\"description\":\"red size 34-36\",\"color\":\"red\",\"size\":\"35-60\",\"quantity\":\"60\",\"amount\":\"35\",\"costprice\":\"300\",\"costsale\":\"350\",\"attachment\":\"hello.jpg\"}",
+  "body": "{\"productid\":\"hello world\",\"description\":\"red size 34-36\",\"color\":\"red\",\"size\":\"35-60\",\"amount\":\"35\",\"costprice\":\"300\",\"costsale\":\"350\",\"attachment\":\"hello.jpg\"}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"

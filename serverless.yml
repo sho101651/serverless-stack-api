@@ -135,6 +135,18 @@ functions:
           cors: true
           authorizer: aws_iam
 
+  updateItem:
+    # Defines an HTTP API endpoint that calls the main function in update.js
+    # - path: url path is /notes/{id}
+    # - method: PUT request
+    handler: updateItem.main
+    events:
+      - http:
+          path: update/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
 # Create our resources with separate CloudFormation templates
 resources:
   # API Gateway Errors

@@ -12,7 +12,6 @@ export const main = handler(async (event, context) => {
       description: data.description, // Parsed from request body
       color: data.color, // Parsed from request body
       size: data.size,
-      quantity: data.quantity,
       amount: data.amount,
       costprice: data.costprice,
       costsale: data.costsale,

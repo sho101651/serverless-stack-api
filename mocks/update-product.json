@@ -1,0 +1,11 @@
+{
+  "body": "{\"productid\":\"329-4\",\"description\":\"คัดชูยาง\",\"color\":\"red\",\"size\":\"35-60\",\"amount\":\"12\",\"costprice\":\"350\",\"costsale\":\"700\",\"attachment\":\"1616675846607-1808-2.png\"}",
+  "pathParameters": {
+    "id": "329-4"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "us-east-1:936ad1bb-b328-48dc-8c8a-c84a97a3e7cb"
+    }
+  }
+}
