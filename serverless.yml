@@ -19,6 +19,7 @@ provider:
   # under process.env.
   environment:
     tableName: notes
+    tableProduct: products
     stripeSecretKey: ${env:STRIPE_SECRET_KEY}
 
   # 'iamRoleStatements' defines the permission policy for the Lambda function.
@@ -105,6 +106,19 @@ functions:
     events:
       - http:
           path: billing
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  # Defines an HTTP API endpoint that calls the main function in create.js
+  # - path: url path is /notes
+  # - method: POST request
+  # - authorizer: authenticate using the AWS IAM role
+  createItem:
+    handler: createItem.main
+    events:
+      - http:
+          path: create/item
           method: post
           cors: true
           authorizer: aws_iam
