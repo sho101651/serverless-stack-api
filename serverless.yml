@@ -125,7 +125,7 @@ functions:
 
   getItem:
     # Defines an HTTP API endpoint that calls the main function in get.js
-    # - path: url path is /get/item/{id}
+    # - path: url path is /item/{id}
     # - method: GET request
     handler: getItem.main
     events:
